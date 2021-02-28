@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "sateliteforestdetection"
+version = "0.1.0"
+description = ""
+authors = ["vlad.luca <vlad.luca@syneto.eu>"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+matplotlib = "^3.3.4"
+geopandas = "^0.8.2"
+Shapely = "^1.7.1"
+folium = "^0.12.1"
+rasterio = "^1.2.0"
+sentinelsat = "^0.14"
+dask = "^2021.1.1"
+
+
+[tool.poetry.dev-dependencies]
+pylint = "^2.6.0"
+black = {version = "^20.8b1", allow-prereleases = true}
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
