@@ -187,7 +187,7 @@ class Santinel2Manager(BaseObject):
         meta.update(driver="GTiff")
         meta.update(dtype=rio.float32)
 
-        with rio.open(result_path, "w", **meta) as dst:
+        with rio.open(result_path, "w+", **meta) as dst:
             for band_index in range(1, meta["count"] + 1):
 
                 if meta["count"] == 1:
