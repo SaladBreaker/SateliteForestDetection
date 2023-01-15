@@ -8,7 +8,7 @@ Software used for detecting forest surfaces based on Santinel2 datasets.
 The Python env is created with Poetry. To install the needed libs use:
 
     poetry install 
-
+ 
 ## Configuration
 Create the file: src/settings/credentials.py with contains:
 
